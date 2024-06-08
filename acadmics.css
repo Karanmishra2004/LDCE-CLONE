@@ -1,0 +1,10 @@
+.acad ul{
+    display: flex;
+    flex-direction: column;
+}
+.acad li{
+    margin: 1%;
+}
+.contiene a{
+    text-decoration: none;
+}

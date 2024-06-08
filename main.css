@@ -1,0 +1,185 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  background-color: #f9f9f9;
+  color: #0f0101;
+  padding: 7px;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+nav ul li a:hover {
+  background-color: blue;
+  color: white; 
+}
+nav ul li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+li {
+  margin-right: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #080101;
+  font-weight: bold;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+.vision,
+.text-box {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.mission {
+  width: auto;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  
+  margin-right: 10px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+.mission ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.mission li {
+  margin-bottom: 5px;
+}
+
+.news-updates {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+article {
+  margin-bottom: 15px;
+}
+
+.workshop h3,
+.talk h3 {
+  font-weight: bold;
+}
+
+.workshop p,
+.talk p {
+  font-size: 0.8em;
+  margin-bottom: 5px;
+}
+
+.news-updates {
+  display: flex;
+  flex-direction: row;
+}
+
+.last-kaam {
+  display: flex;
+}
+
+footer {
+  background: linear-gradient(to right,#2f80ed,#180145);
+  margin-left: 0px;
+  padding: 0%;
+  border: 2px solid white;
+  border-radius: 0px;
+  color: white;
+}
+
+.last-kaam a {
+  color: white;
+  text-decoration: none;
+}
+
+.last-kaam ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.last-kaam li {
+  margin-bottom: 10px;
+}
+
+.contact_form {
+  display: flex;
+  flex-direction: row;
+  background-color: #2f80ed;
+  padding: 0px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.email-input {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.email-input label {
+  width: 120px;
+  text-align: right;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.email-input input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  flex: 1;
+}
+
+button[type="submit"] {
+  background-color: #fff;
+  color: #2f80ed;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #e0e0e0;
+}
+
+.paav {
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.mission ul {
+  display: flex;
+  flex-direction: row;
+}

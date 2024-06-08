@@ -1,0 +1,48 @@
+.options {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px; /* Add some spacing */
+}
+
+.options ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: circle;
+    padding: 0;
+}
+
+.institute ul,
+.leagal ul {
+    background-color: azure;
+    padding-bottom: 5px;
+    border-radius: 8px; /* Add some rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.institute li,
+.leagal li {
+    margin: 5px 0;
+}
+
+/* Add hover effects */
+.institute a:hover,
+.leagal a:hover {
+    color: #2f80ed;
+    transition: color 0.3s ease;
+}
+
+/* Add animation to the footer */
+footer {
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <div class="header">
+        <a href="main.html"> <img src="/logo (1).png" alt="name"></a>
+        <img src="/Screenshot 2024-04-20 173818.png" alt="">
+    </div>
+    <hr>
+    <nav>
+        <ul>
+            <li><a href="main.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="acadmics.html">ACADEMICS</a></li>
+            <li><a href="department.html">DEPARTMENTS</a></li>
+            <li><a href="campuslife.html">CAMPUS LIFE</a></li>
+            <li><a href="ciricular.html">CIRCULARS</a></li>
+            <li><a href="placement.html">PLACEMENT</a></li>
+            <li><a href="inovation.html">INNOVATION AND STARTUPS</a></li>
+            <li><a href="nirf.html">NIRF</a></li>
+        </ul>
+    </nav>
+    <h1>Welcome To LDCE</h1>
+    <hr>
+    <div class="text-box">
+        <p>L. D. College of Engineering endearingly known as L.D.C.E is Ahmedabad’s premier engineering college situated at the city’s heart and surrounded by elite organization like PRL, ATIRA, ISRO, IIM and CEPT. Starting in 1948 to impart quality higher education in various fields of engineering, it has seen unprecedented growth. It is affiliated with Gujarat Technological University & administrated by Department of Technical Education, Government of Gujarat.</p>
+    </div>
+    <h1>Vision</h1>
+    <hr>
+    <section class="vision">
+        <p>To contribute for sustainable development of nation through achieving excellence in technical education and research while facilitating transformation of students into responsible citizens and competent professionals.</p>
+    </section>
+    <div class="options">
+        <div class="institute">
+            <a href="#">The institute</a>
+            <p></p>
+            <hr>
+            <ul>
+                <li><a href="about.html">About LDCE</a></li>
+                <li><a href="#">Principle cv</a></li>
+                <li><a href="#">organization chart</a></li>
+                <li><a href="#">Institutes Commetties</a></li>
+                <li><a href="#">COE Simenese</a></li>
+                <li><a href="#">COE Welding</a></li>
+                <li><a href="#">Newsletter letter</a></li>
+                <li><a href="#">Campus Drive</a></li>
+            </ul>
+        </div>
+        <div class="leagal">
+            <a href="#">Leagal</a>
+            <hr>
+            <ul>
+                <li><a href="#">MOU</a></li>
+                <li><a href="#">Mandetory Disclouser</a></li>
+                <li><a href="#">Tender Notice</a></li>
+                <li><a href="#">TEQIP</a></li>
+                <li><a href="#">Right to info act.</a></li>
+                <li><a href="#">faculty and staff</a></li>
+                <li><a href="#">Addmission and reservation</a></li>
+                <li><a href="#">Recruitment Rules for Faculty</a></li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <div class="last-kaam">
+            <div>
+                <a href="#">Quick Links</a>
+                <hr>
+                <ul>
+                    <li>CAMPUS MAP</li>
+                    <li>USEFUL LINKS</li>
+                    <li>HDFC ONLINE PAYMENT</li>
+                    <li>STUDENT INDUCTION PROGRAM</li>
+                    <li>TEAM</li>
+                    <li>AICTE FEEDBACK</li>
+                </ul>
+            </div>
+            <div>
+                <a href="#">About</a>
+                <hr>
+                <ul>
+                    <li>HISTORY</li>
+                    <li>ADMISSION PROCEDURE</li>
+                    <li>DIRECTIONS</li>
+                    <li>FEES & SCHOLARSHIPS</li>
+                    <li>COMMITTEES</li>
+                </ul>
+            </div>
+            <div>
+                <a href="#">Important Info.</a>
+                <hr>
+                <ul>
+                    <li>RIGHT TO INFO. ACT</li>
+                    <li>MOU</li>
+                    <li>TEQIP</li>
+                    <li>MANDATORY DISCLOSURE</li>
+                    <li>TENDER NOTICE</li>
+                </ul>
+            </div>
+            <div>
+                <a href="#">Contact Us</a>
+                <hr>
+                <p>L.D. College of Engineering Opp Gujarat University, Navrangpura, Ahmedabad - 380015. GUJARAT INDIA</p>
+                <div class="contact_form">
+                    <form action="submit.php" method="post">
+                        <h>Subscribe to our Newsletter</h>
+                        <div>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div>
+                            <button type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="paav">
+            <p>&copy; 2024 LDCE. All rights Reserved | Design by karan mishra</p>
+        </div>
+    </footer>
+    <script>
+
+        const instituteLink = document.querySelector('.institute a');
+        const instituteContent = document.querySelector('.institute ul');
+        
+        instituteLink.addEventListener('click', () => {
+            instituteContent.classList.toggle('show');
+        });
+
+       
+        const emailInput = document.getElementById('email');
+
+        emailInput.addEventListener('input', () => {
+            const email = emailInput.value;
+            const isValid = validateEmail(email);
+
+            if (isValid) {
+                emailInput.classList.remove('invalid');
+            } else {
+                emailInput.classList.add('invalid');
+            }
+        });
+
+        function validateEmail(email) {
+            const regex = /\S+@\S+\.\S+/;
+            return regex.test(email);
+        }
+    </script>
+</body>
+</html>

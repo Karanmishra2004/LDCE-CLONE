@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="header">
+        <a href="main.html"> <img src="/logo (1).png" alt="name"></a>
+        <img src="/Screenshot 2024-04-20 173818.png" alt="">
+    </div>
+    <hr>
+    <nav>
+        <ul>
+            <li><a href="main.html">HOME</a></li>
+            <li ><a href="about.html">ABOUT</a>
+              
+            <li><a href="acadmics.html">ACADEMICS</a></li>
+            <li><a href="department.html">DEPARTMENTS</a></li>
+            <li><a href="campuslife.html">CAMPUS LIFE</a></li>
+            <li><a href="ciricular.html">CIRCULARS</a></li>
+            <li><a href="placement.html">PLACEMENT</a></li>
+            <li><a href="inovation.html">INNOVATION AND STARTUPS</a></li>
+            <li><a href="nirf.html">NIRF</a></li>
+        </ul>
+    </nav>
+    <hr>
+    <div class="slideimg">
+        <img src="/our_image.jpeg" alt="" width="100%" height="100%">
+    </div>
+    <div class="container">
+        <h1>Welcome To LDCE</h1>
+        <hr>
+        <div class="text-box">
+            <p>L. D. College of Engineering endearingly known as L.D.C.E is Ahmedabad’s premier engineering college situated at the city’s heart and surrounded by elite organization like PRL, ATIRA, ISRO, IIM and CEPT. Starting in 1948 to impart quality higher education in various fields of engineering, it has seen unprecedented growth. It is affiliated with Gujarat Technological University & administrated by Department of Technical Education, Government of Gujarat.</p>
+        </div>
+        <h1>Vision</h1>
+        <hr>
+        <section class="vision">
+            <p>To contribute for sustainable development of nation through achieving excellence in technical education and research while facilitating transformation of students into responsible citizens and competent professionals.</p>
+        </section>
+        <h1>Mission</h1>
+        <hr>
+        <section class="mission">
+            <ul style="display: flex; flex-direction: column; list-style: circle;" >
+                <li>To impart affordable and quality education in order to meet the needs of industries and achieve excellence in teaching-learning process.</li>
+                <li>To create a conducive research ambience that drives innovation and nurtures research-oriented scholars and outstanding professionals.</li>
+                <li>To collaborate with other academic & research institutes as well as industries in order to strengthen education and multidisciplinary research.</li>
+                <li>To promote equitable and harmonious growth of students, academicians, staff, society and industries, thereby becoming a center of excellence in technical education.</li>
+                <li>To practise and encourage high standards of professional ethics, transparency and accountability.</li>
+            </ul>
+        </section>
+        <div class="mja_kro">
+            <section class="news-update">
+                <h2>News & Updates</h2>
+                <article class="workshop">
+                    <div class="content-wrapper">
+                        <h3>Report of one day workshop on Synergy between computer vision and Edge Al scheduled on 05/04/2024</h3>
+                        <p>08 Apr, 2024</p>
+                        <a href="#">Watch on YouTube</a>
+                    </div>
+                    <div class="video-wrapper">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" title="Workshop on Synergy between Computer Vision and Edge AI" frameborder="0" allowfullscreen></iframe>
+                      </div>
+                </article>
+            </section>
+        </div>
+    </div>
+    <footer>
+        <div class="last-kaam">
+            <div style="margin-right: 2%;">
+                <a href="#">Quick Links</a>
+                <hr>
+                <ul >
+                    <li> <a href="campuslife.html">CAMPUS MAP</a></li>
+                    <li>USEFUL LINKS</li>
+                    <li>HDFC ONLINE PAYMENT</li>
+                    <li>STUDENT INDUCTION PROGRAM</li>
+                    <li>TEAM</li>
+                    <li>AICTE FEEDBACK</li>
+                </ul>
+            </div>
+            <div style="margin-right: 2%; ">
+                <a href="#">About</a>
+                <hr>
+                <ul>
+                    <li>HISTORY</li>
+                    <li>ADMISSION PROCEDURE</li>
+                    <li>DIRECTIONS</li>
+                    <li>FEES & SCHOLARSHIPS</li>
+                    <li>COMMITTEES</li>
+                </ul>
+            </div>
+            <div style="margin-right: 2%;">
+                <a href="#">Important Info.</a>
+                <hr>
+                <ul>
+                    <li>RIGHT TO INFO. ACT</li>
+                    <li>MOU</li>
+                    <li>TEQIP</li>
+                    <li>MANDATORY DISCLOSURE</li>
+                    <li>TENDER NOTICE</li>
+                </ul>
+            </div>
+            <div style="margin-right: 2%;">
+                <a href="#">Contact Us</a>
+                <hr>
+                <p>L.D. College of Engineering Opp Gujarat University, Navrangpura, Ahmedabad - 380015. GUJARAT INDIA</p>
+                <div class="contact_form">
+                    <form action="submit.php" method="post">
+                        <h>Subscribe to our Newsletter</h>
+                        <div>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div>
+                            <button type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="paav">
+            <p>&copy; 2024 LDCE. All rights Reserved | Design by karan mishra</p>
+        </div>
+
+    </footer>
+    <script>
+        // Function to toggle visibility of "The institute" content
+        const instituteLink = document.querySelector('.institute a');
+        const instituteContent = document.querySelector('.institute ul');
+        
+        instituteLink.addEventListener('click', () => {
+            instituteContent.classList.toggle('show');
+        });
+    
+        // Function to display a welcome message based on the time of day
+        function displayWelcomeMessage() {
+            const today = new Date();
+            const hour = today.getHours();
+    
+            let greeting;
+    
+            if (hour < 12) {
+                greeting = "Good morning!";
+            } else if (hour < 18) {
+                greeting = "Good afternoon!";
+            } else {
+                greeting = "Good evening!";
+            }
+    
+            alert(greeting + " Welcome to LDCE!");
+        }
+    
+        // Call the function to display the welcome message
+        displayWelcomeMessage();
+    
+        // Function to handle form submission
+        function handleFormSubmission(event) {
+            event.preventDefault();
+            const emailInput = document.getElementById('email');
+            const email = emailInput.value;
+    
+            // Add your logic here to handle form submission
+            console.log("Email submitted:", email);
+    
+            // You can also send the email data to your server using AJAX
+        }
+    
+        // Add event listener to the form
+        const form = document.querySelector('form');
+        form.addEventListener('submit', handleFormSubmission);
+    </script>
+    
+</body>
+</html>

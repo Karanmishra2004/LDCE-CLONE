@@ -1,0 +1,56 @@
+
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .hero h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero-img {
+    width: 70%;
+    height: auto;
+  }
+  
+  .about-placement-cell p,
+  .placement-process p {
+    text-align: justify;
+  }
+  
+  .placement-process ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .placement-process li {
+    margin-bottom: 10px;
+  }
+  
+  .statistics {
+    text-align: center;
+  }
+  
+  .stats-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .stat {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    
+  }
+  .placement-process ul{
+    display: flex;
+    flex-direction: column;
+    list-style: circle;
+  }
